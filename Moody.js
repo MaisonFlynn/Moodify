@@ -21,6 +21,7 @@ axios.patch(url, status, {
   headers: {
     'Authorization': `token ${process.env.SHUSH}`, // GitHub Token Environment Variable
     'Content-Type': 'application/json'
+  }
 })
   .then(response => console.log('Hunky-Dory!'))
   .catch(error => console.error(`Whoopsie-Daisy: ${error.response.status}`));
