@@ -7,13 +7,13 @@ cd Moodifier
 
 ## Configuration
 
-[Generate New Token (Classic)](https://github.com/settings/tokens), Select "User" Scope & Generate Token
+1. [Generate New Token (Classic)](https://github.com/settings/tokens), Select "User" Scope & Generate Token
 
-Repository Settings → Secrets & Variables → Actions → New Repository Secret
+2. Repository Settings → Secrets & Variables → Actions → New Repository Secret
 - Name: `SHUSH`
 - Secret: `[Personal Access Token]`
 
-Customize "Stuff" (Optional)
+3. Customize "Stuff" (Optional)
 ```
 const stuff = [
   "💭 Ponderin'",
