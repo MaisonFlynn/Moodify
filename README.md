@@ -6,6 +6,7 @@ cd Moodifier
 ```
 
 https://github.com/settings/tokens
+
 Generate New Token (Classic), Select "User" Scope & Generate Token
 
 Repository Settings → Secrets & Variables → Actions → New Repository Secret
