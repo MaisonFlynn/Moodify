@@ -1,23 +1,23 @@
 const axios = require('axios');
 
-// List O' Statuses
-const statuses = [
+// List O' Bio
+const stuff = [
   "💭 Ponderin'",
   "🎯 Dialled",
   "🧩 Perplexed",
   "☁️ Cloud 9"
 ];
 
-// Randomly Select Status
-const randomize = Math.floor(Math.random() * statuses.length);
-const status = statuses[randomize];
+// Randomly Select Bio
+const randomize = Math.floor(Math.random() * stuff.length);
+const thing = stuff[randomize];
 
 // GitHub API URL TO Update User Profile (Bio)
 const url = 'https://api.github.com/user';
 
 // Send PATCH Request TO GitHub API TO Update Bio
 axios.patch(url, {
-  bio: status // Update Bio W/ Selected Status
+  bio: thing // Update Bio W/ Selected "Thing"
 }, {
   headers: {
     'Authorization': `token ${process.env.SHUSH}`, // GitHub Token
