@@ -5,8 +5,6 @@ git clone https://github.com/MaisonFlynn/Moodifier.git
 cd Moodifier
 ```
 
-https://github.com/settings/tokens
-
 [Generate New Token (Classic)](https://github.com/settings/tokens), Select "User" Scope & Generate Token
 
 Repository Settings → Secrets & Variables → Actions → New Repository Secret
