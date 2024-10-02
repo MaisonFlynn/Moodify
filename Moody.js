@@ -1,34 +1,21 @@
 const axios = require('axios');
 
-// List O' Statuses
-const statuses = [
-  { message: "Ponderin'", emoji: "💭" },
-  { message: "Dialled", emoji: "🎯" },
-  { message: "Perplexed", emoji: "🧩" },
-  { message: "Cloud 9", emoji: "☁️" }
-];
+// New bio message
+const newBio = "Updating my bio via GitHub API.";
 
-// Randomly Select Status
-const randomizer = Math.floor(Math.random() * statuses.length);
-const status = statuses[randomizer];
+// GitHub API URL to update user profile
+const url = 'https://api.github.com/user';
 
-// Log selected status for debugging
-console.log("Selected status:", status);
-
-// GitHub API URL TO Update Status
-const url = 'https://api.github.com/user/status';
-
-// Send PATCH Request TO GitHub API
+// Send PATCH request to GitHub API to update bio
 axios.patch(url, {
-  emoji: status.emoji,  
-  message: status.message 
+  bio: newBio // Update the bio field
 }, {
   headers: {
-    'Authorization': `token ${process.env.SHUSH}`, // GitHub Token Environment Variable
+    'Authorization': `token ${process.env.SHUSH}`, // GitHub Token
     'Content-Type': 'application/json'
   }
 })
-  .then(response => console.log('Status updated successfully:', response.data))
+  .then(response => console.log('Profile updated successfully:', response.data))
   .catch(error => {
     console.error('GitHub API Error:', error.response ? error.response.data : error.message);
     console.error('Status Code:', error.response ? error.response.status : 'No response');
