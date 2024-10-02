@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # Test
 
 jobs:
-  moodifier:
+  Moodifier:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: '20.x'
 
       - name: Install Axios
         run: npm install axios
