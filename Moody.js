@@ -13,13 +13,16 @@ const randomizer = Math.floor(Math.random() * statuses.length);
 const status = statuses[randomizer];
 
 // Log selected status for debugging
-console.log("Status:", status);
+console.log("Selected status:", status);
 
 // GitHub API URL TO Update Status
 const url = 'https://api.github.com/user/status';
 
 // Send PATCH Request TO GitHub API
-axios.patch(url, status, {
+axios.patch(url, {
+  emoji: status.emoji,  
+  message: status.message 
+}, {
   headers: {
     'Authorization': `token ${process.env.SHUSH}`, // GitHub Token Environment Variable
     'Content-Type': 'application/json'
