@@ -11,9 +11,9 @@ Repository Settings → Secrets & Variables → Actions → New Repository Secre
 - Name: `SHUSH`
 - Secret: `[Personal Access Token]`
 
-Customize Statuses (Optional)
+Customize "Stuff" (Optional)
 ```
-const statuses = [
+const stuff = [
   "💭 Ponderin'",
   "🎯 Dialled",
   "🧩 Perplexed",
