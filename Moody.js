@@ -2,8 +2,10 @@ const axios = require('axios');
 
 // List O' Statuses
 const statuses = [
-  { message: "Ponderin'", emoji: ":thought_balloon:" },
-  { message: "Dialled", emoji: ":dart:" }
+  { message: "Ponderin'", emoji: "💭" },
+  { message: "Dialled", emoji: "🎯" },
+  { message: "Perplexed", emoji: "🧩" },
+  { message: "Cloud 9", emoji: "☁️" }
 ];
 
 // Get Today's Date
