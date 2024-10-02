@@ -21,4 +21,4 @@ const statuses = [
 ];
 ```
 
-Automated Workflow @ 12AM UTC
+Automated Workflow **Daily** @ **12AM UTC**!
