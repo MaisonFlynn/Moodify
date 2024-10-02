@@ -3,6 +3,7 @@ name: Status Moodifier
 on:
   schedule:
     - cron: '0 0 * * *'  # Daily @ Midnight UTC
+  workflow_dispatch: # Test
 
 jobs:
   moodifier:
