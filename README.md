@@ -8,8 +8,8 @@ cd Moodifier
 [Generate New Token (Classic)](https://github.com/settings/tokens), Select "User" Scope & Generate Token
 
 Repository Settings → Secrets & Variables → Actions → New Repository Secret
-- Name: `` `SHUSH` ``
-- Secret: `Personal Access Token`
+- Name: `SHUSH`
+- Secret: `[Personal Access Token]`
 
 Customize Statuses (Optional)
 ```
