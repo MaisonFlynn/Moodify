@@ -1,11 +1,11 @@
 const axios = require('axios');
 
-// List of statuses
+// List O' Statuses
 const statuses = [
-  { message: "Ponderin'", emoji: "💭" },
-  { message: "Dialled", emoji: "🎯" },
-  { message: "Perplexed", emoji: "🧩" },
-  { message: "Cloud 9", emoji: "☁️" }
+  "💭 Ponderin'",
+  "🎯 Dialled",
+  "🧩 Perplexed",
+  "☁️ Cloud 9"
 ];
 
 // Randomly Select Status
@@ -17,7 +17,7 @@ const url = 'https://api.github.com/user';
 
 // Send PATCH Request TO GitHub API TO Update Bio
 axios.patch(url, {
-  bio: `${status.emoji} ${status.message}` // Update Bio W/ Status & Emoji
+  bio: status // Update Bio W/ Selected Status
 }, {
   headers: {
     'Authorization': `token ${process.env.SHUSH}`, // GitHub Token
