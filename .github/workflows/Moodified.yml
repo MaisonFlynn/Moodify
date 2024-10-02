@@ -1,4 +1,4 @@
-name: Status Moodifier
+name: Moodifier
 
 on:
   schedule:
@@ -21,7 +21,7 @@ jobs:
       - name: Install Axios
         run: npm install axios
 
-      - name: Run Moody
+      - name: Run Moodify
         env:
           SHUSH: ${{ secrets.SHUSH }}  # GitHub Token Reference
-        run: node Moody.js  # Update Status
+        run: node Moodify.js  # Update Status
