@@ -13,9 +13,11 @@ Name = SHUSH
 Secret = Personal Access Token
 
 Customize Statuses (Optional)
-`const statuses = [
+```
+const statuses = [
   "💭 Ponderin'",
   "🎯 Dialled",
   "🧩 Perplexed",
   "☁️ Cloud 9"
-];`
+];
+```
