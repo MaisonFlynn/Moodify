@@ -12,6 +12,9 @@ const statuses = [
 const randomizer = Math.floor(Math.random() * statuses.length);
 const status = statuses[randomizer];
 
+// Debug
+console.log("Status:", status)
+
 // GitHub API URL TO Update Status
 const url = 'https://api.github.com/user/status';
 
@@ -22,5 +25,16 @@ axios.patch(url, status, {
     'Content-Type': 'application/json'
   }
 })
-  .then(response => console.log('Hunky-Dory!'))
-  .catch(error => console.error(`Whoopsie-Daisy: ${error.response.status}`));
+  .then(response => {
+    console.log('Hunky-Dory:', response.data);
+  })
+  .catch(error => {
+    if (error.response) {
+      console.error('GitHub API:', error.response.data);
+      console.error('Status Code:', error.response.status);
+    } else if (error.request) {
+      console.error('NO Response Received:', error.request);
+    } else {
+      console.error('Error Setting UP Request:', error.message);
+    }
+  });
