@@ -8,12 +8,9 @@ const statuses = [
   { message: "Cloud 9", emoji: "☁️" }
 ];
 
-// Get Today's Date
-const today = new Date();
-const day = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
-
-// Cycle Status ON Day
-const status = statuses[day % statuses.length];
+// Randomly Select Status
+const randomizer = Math.floor(Math.random() * statuses.length);
+const status = statuses[randomizer];
 
 // GitHub API URL TO Update Status
 const url = 'https://api.github.com/user/status';
