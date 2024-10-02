@@ -1,0 +1,26 @@
+name: Status Moodifier
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily @ Midnight UTC
+
+jobs:
+  moodifier:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+
+      - name: Install Axios
+        run: npm install axios
+
+      - name: Run Moody
+        env:
+          SHUSH: ${{ secrets.SHUSH }}  # GitHub Token Reference
+        run: node Moody.js  # Update Status
