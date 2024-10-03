@@ -1,6 +1,5 @@
 const axios = require('axios');
 
-// Jargon
 const kerfuffle = [
   "💭 Ponderin'",
   "🎯 Dialled",
@@ -12,7 +11,7 @@ const kerfuffle = [
 ];
 
 axios.patch('https://api.github.com/user', {
-  bio: kerfuffle[Math.floor(Math.random() * kerfuffle.length)]
+  bio: kerfuffle[Math.floor(Math.random() * kerfuffle.length)] // Random "Kerfuffle"
 }, {
   headers: {
     'Authorization': `token ${process.env.SHUSH}`, // GitHub Token
