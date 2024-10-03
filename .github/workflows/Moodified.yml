@@ -2,7 +2,7 @@ name: Moodifier
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Daily @ Midnight UTC
+    - cron: '0 0 * * *'  # @ 12AM UTC
   workflow_dispatch: # Test
 
 jobs:
