@@ -21,7 +21,8 @@ const stuff = [
   "🧩 Perplexed",
   "☁️ Cloud 9",
   "😴 'eepy",
-  "👨🏻‍💻 Debuggin'"
+  "👨🏻‍💻 Debuggin'",
+  "🌱 Learnin'"
 ];
 ```
 
