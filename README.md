@@ -13,9 +13,9 @@ Repository Settings → Secrets & Variables → Actions → New Repository Secre
 - Name: `SHUSH`
 - Secret: `[PASTE]`
 
-Customize "Stuff" (Optional)
+Customize "Array" (Optional)
 ```
-const stuff = [
+const array = [
   "💭 Ponderin'",
   "🎯 Dialled",
   "🧩 Perplexed",
