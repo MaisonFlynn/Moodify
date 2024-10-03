@@ -24,4 +24,4 @@ jobs:
       - name: Run Moodify
         env:
           SHUSH: ${{ secrets.SHUSH }}  # GitHub Token Reference
-        run: node Moodify.js  # Update Status
+        run: node Moodify.js  # Update Bio
