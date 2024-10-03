@@ -13,9 +13,9 @@ Repository Settings → Secrets & Variables → Actions → New Repository Secre
 - Name: `SHUSH`
 - Secret: `[PASTE]`
 
-Customize "Array" (Optional)
+Customize "Kerfuffle" (Optional)
 ```
-const array = [
+const kerfuffle = [
   "💭 Ponderin'",
   "🎯 Dialled",
   "🧩 Perplexed",
