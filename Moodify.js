@@ -1,4 +1,4 @@
-const axios = require('axios'); // HTTP Requests
+const axios = require('axios');
 
 // List O' Bio
 const stuff = [
@@ -11,16 +11,9 @@ const stuff = [
   "🧙🏻‍♂️ Type Sh*t"
 ];
 
-// Randomly Select Bio
-const randomize = Math.floor(Math.random() * stuff.length);
-const thing = stuff[randomize];
-
-// GitHub API URL TO Modify User Profile (Bio)
-const url = 'https://api.github.com/user';
-
-// Send PATCH Request TO GitHub API TO Modify Bio
-axios.patch(url, {
-  bio: thing // Modify Bio W/ Selected "Thing"
+// Send PATCH @ GitHub API w/ Ramdom "Stuff"
+axios.patch('https://api.github.com/user', {
+  bio: stuff[Math.floor(Math.random() * stuff.length)]
 }, {
   headers: {
     'Authorization': `token ${process.env.SHUSH}`, // GitHub Token
