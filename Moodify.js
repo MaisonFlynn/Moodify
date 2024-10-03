@@ -15,7 +15,7 @@ const stuff = [
 const randomize = Math.floor(Math.random() * stuff.length);
 const thing = stuff[randomize];
 
-// GitHub API URL TO Update User Profile (Bio)
+// GitHub API URL TO Modify User Profile (Bio)
 const url = 'https://api.github.com/user';
 
 // Send PATCH Request TO GitHub API TO Modify Bio
