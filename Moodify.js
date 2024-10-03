@@ -7,8 +7,8 @@ const stuff = [
   "🧩 Perplexed",
   "☁️ Cloud 9",
   "😴 'eepy",
-  "👨🏻‍💻 Debuggin'",
-  "🌱 Learnin'"
+  "👨🏻‍🍳 Cooked",
+  "🧙🏻‍♂️ Type Sh*t"
 ];
 
 // Randomly Select Bio
