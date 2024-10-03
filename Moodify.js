@@ -1,7 +1,7 @@
 const axios = require('axios');
 
-// List O' Bio
-const stuff = [
+// Array O' Biography
+const array = [
   "💭 Ponderin'",
   "🎯 Dialled",
   "🧩 Perplexed",
@@ -11,9 +11,9 @@ const stuff = [
   "🧙🏻‍♂️ Type Sh*t"
 ];
 
-// Send PATCH @ GitHub API w/ Ramdom "Stuff"
+// Send PATCH @ GitHub API w/ Random Biography
 axios.patch('https://api.github.com/user', {
-  bio: stuff[Math.floor(Math.random() * stuff.length)]
+  bio: array[Math.floor(Math.random() * array.length)]
 }, {
   headers: {
     'Authorization': `token ${process.env.SHUSH}`, // GitHub Token
