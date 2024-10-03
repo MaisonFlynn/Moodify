@@ -1,7 +1,7 @@
 const axios = require('axios');
 
-// Array O' Biography
-const array = [
+// Jargon
+const kerfuffle = [
   "💭 Ponderin'",
   "🎯 Dialled",
   "🧩 Perplexed",
@@ -11,9 +11,8 @@ const array = [
   "🧙🏻‍♂️ Type Sh*t"
 ];
 
-// Send PATCH @ GitHub API w/ Random Biography
 axios.patch('https://api.github.com/user', {
-  bio: array[Math.floor(Math.random() * array.length)]
+  bio: kerfuffle[Math.floor(Math.random() * kerfuffle.length)]
 }, {
   headers: {
     'Authorization': `token ${process.env.SHUSH}`, // GitHub Token
