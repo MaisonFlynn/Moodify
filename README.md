@@ -10,7 +10,9 @@ cd Moodifier
 [Generate New Token (Classic)](https://github.com/settings/tokens), Select "User" Scope & Generate Token [COPY]
 
 Repository Settings → Secrets & Variables → Actions → New Repository Secret
+
 Name: `SHUSH`
+
 Secret: `[PASTE]`
 
 Customize "Stuff" (Optional)
