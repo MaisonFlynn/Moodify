@@ -26,4 +26,4 @@ const stuff = [
 ];
 ```
 
-Workflow @ **12AM UTC**!
+Workflow @ **12AM EDT**!
