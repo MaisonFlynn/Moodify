@@ -5,9 +5,7 @@ const kerfuffle = [
   { emj: "🎯", msg: "Dialled" },
   { emj: "🧩", msg: "Perplexed" },
   { emj: "☁️", msg: "Cloud 9" },
-  { emj: "😴", msg: "'eepy" },
-  { emj: "👨🏻‍🍳", msg: "Cooked" },
-  { emj: "🧙🏻‍♂️", msg: "Type Sh*t" }
+  { emj: "💤", msg: "'eepy" }
 ];
 
 const idk = kerfuffle[Math.floor(Math.random() * kerfuffle.length)];
