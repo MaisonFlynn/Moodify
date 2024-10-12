@@ -4,7 +4,7 @@ const kerfuffle = [
   { emoji: "💭", message: "Ponderin'" },
   { emoji: "🎯", message: "Dialled" },
   { emoji: "🧩", message: "Perplexed" },
-  { emoji: "☁️", message: "☁Cloud 9" },
+  { emoji: "☁️", message: "Cloud 9" },
   { emoji: "😴", message: "'eepy" },
   { emoji: "👨🏻‍🍳", message: "Cooked" },
   { emoji: "🧙🏻‍♂️", message: "Type Sh*t" }
@@ -32,5 +32,5 @@ axios.post('https://api.github.com/graphql', {
     'Content-Type': 'application/json'
   }
 })
-  .then(() => console.log('Hunky-Dory! Status updated with message and emoji!'))
+  .then(() => console.log('Hunky-Dory!'))
   .catch(err => console.error(`Whoopsie-Daisy: ${err.response?.status || 'Crickets...'}`));
