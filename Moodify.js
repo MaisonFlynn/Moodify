@@ -1,21 +1,27 @@
 const axios = require('axios');
 
 const kerfuffle = [
-  "💭 Ponderin'",
-  "🎯 Dialled",
-  "🧩 Perplexed",
-  "☁️ Cloud 9",
-  "😴 'eepy",
-  "👨🏻‍🍳 Cooked",
-  "🧙🏻‍♂️ Type Sh*t"
+  { emoji: "💭", message: "Ponderin'" },
+  { emoji: "🎯", message: "Dialled" },
+  { emoji: "🧩", message: "Perplexed" },
+  { emoji: "☁️", message: "☁Cloud 9" },
+  { emoji: "😴", message: "'eepy" },
+  { emoji: "👨🏻‍🍳", message: "Cooked" },
+  { emoji: "🧙🏻‍♂️", message: "Type Sh*t" }
 ];
+
+const randomStatus = kerfuffle[Math.floor(Math.random() * kerfuffle.length)];
 
 axios.post('https://api.github.com/graphql', {
   query: `
     mutation {
-      changeUserStatus(input: { message: "${kerfuffle[Math.floor(Math.random() * kerfuffle.length)]}" }) {
+      changeUserStatus(input: {
+        message: "${randomStatus.message}",
+        emoji: "${randomStatus.emoji}"
+      }) {
         status {
           message
+          emoji
         }
       }
     }
@@ -26,5 +32,5 @@ axios.post('https://api.github.com/graphql', {
     'Content-Type': 'application/json'
   }
 })
-  .then(() => console.log('Hunky-Dory!'))
+  .then(() => console.log('Hunky-Dory! Status updated with message and emoji!'))
   .catch(err => console.error(`Whoopsie-Daisy: ${err.response?.status || 'Crickets...'}`));
