@@ -1,8 +1,8 @@
 ## Installation
 
 ```bash
-git clone https://github.com/MaisonFlynn/Moodifier.git
-cd Moodifier
+git clone https://github.com/MaisonFlynn/Moodify.git
+cd Moodify
 ```
 
 ## Configuration
