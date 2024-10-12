@@ -16,13 +16,13 @@ Repository Settings → Secrets & Variables → Actions → New Repository Secre
 Customize "Kerfuffle" (Optional)
 ```
 const kerfuffle = [
-  "💭 Ponderin'",
-  "🎯 Dialled",
-  "🧩 Perplexed",
-  "☁️ Cloud 9",
-  "😴 'eepy",
-  "👨🏻‍🍳 Cooked",
-  "🧙🏻‍♂️ Type Sh*t"
+  { emoji: "💭", message: "Ponderin'" },
+  { emoji: "🎯", message: "Dialled" },
+  { emoji: "🧩", message: "Perplexed" },
+  { emoji: "☁️", message: "Cloud 9" },
+  { emoji: "😴", message: "'eepy" },
+  { emoji: "👨🏻‍🍳", message: "Cooked" },
+  { emoji: "🧙🏻‍♂️", message: "Type Sh*t" }
 ];
 ```
 
