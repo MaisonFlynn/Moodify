@@ -10,11 +10,19 @@ const kerfuffle = [
   "🧙🏻‍♂️ Type Sh*t"
 ];
 
-axios.patch('https://api.github.com/user', {
-  bio: kerfuffle[Math.floor(Math.random() * kerfuffle.length)] // Random "Kerfuffle"
+axios.post('https://api.github.com/graphql', {
+  query: `
+    mutation {
+      changeUserStatus(input: { message: "${kerfuffle[Math.floor(Math.random() * kerfuffle.length)]}" }) {
+        status {
+          message
+        }
+      }
+    }
+  `
 }, {
   headers: {
-    'Authorization': `token ${process.env.SHUSH}`, // GitHub Token
+    'Authorization': `Bearer ${process.env.SHUSH}`, // GitHub Token
     'Content-Type': 'application/json'
   }
 })
