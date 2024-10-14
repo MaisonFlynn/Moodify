@@ -19,7 +19,6 @@ const kerfuffle = [
   { emj: "💭", msg: "Ponderin'" },
   { emj: "🎯", msg: "Dialled" },
   { emj: "🧩", msg: "Perplexed" },
-  { emj: "☁️", msg: "Cloud 9" },
   { emj: "💤", msg: "'eepy" }
 ];
 ```
